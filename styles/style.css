@@ -133,7 +133,7 @@
 }
 
   .content-section__subtitle,
-  .how-to__subtitle  {
+  .how-to__subtitle {
     width: 320px;
     height: 63px;
     display: flex;
@@ -283,7 +283,7 @@
   }
 
   .card__text,
-  .footer__copy  {
+  .footer__copy {
     font-weight: 400;
   }
 
