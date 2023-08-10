@@ -135,11 +135,8 @@
   .content-section__subtitle,
   .how-to__subtitle {
     width: 320px;
-    height: 63px;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
-    color: #131313;
     font-family: 'EB Garamond';
     font-size: 28px;
     font-style: normal;
@@ -161,20 +158,10 @@
 
   .content-section__list {
     display: flex;
-    width: 320px;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
     list-style: none;
-  }
-
-  .content-section__list-accent {
-    color: #131313;
-    font-family: 'Inter';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 21.6px;
   }
 
   .content-section__list-item {
@@ -190,7 +177,7 @@
   .content-section__list-dot {
     width: 6px;
     height: 22px;
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   .content-section__list-text {
@@ -201,12 +188,18 @@
     font-weight: 400;
     line-height: 21.6px;
     word-break: break-word;
+    width: 301px;
+  }
+
+  .content-section__list-accent {
+    font-weight: 700;
+    margin-right: 3px;
   }
 
   .how-to {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 52px;
+    padding-bottom: 60px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -253,7 +246,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 8px;
   }
 
   .card__author-name,
@@ -275,9 +268,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: 135%;
+    width: 280px;
   }
 
-  .card__title-dark,
   .card__text-dark {
     color: #131313;
   }
