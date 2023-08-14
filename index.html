@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>С чистого листа</title>
-    <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
 
   <body>
     <div class="wrapper">
       <header class="header background-dark">
         <!-- Шапка сайта -->
-        <nav class="header__navigation">
+        <div class="header__logo-wrapper">
           <a href="#" class="header__logo">
             <img
               class="header__logo-image"
@@ -22,6 +22,8 @@
               height="16"
             />
           </a>
+        </div>
+        <nav class="header__navigation">
           <ul class="header__navigation-list">
             <li class="header__navigation-item">
               <a href="#" class="header__menu-link header__menu-link-active"
@@ -41,7 +43,7 @@
         <!-- Основное содержимое страницы -->
         <section class="cover background-dark">
           <h1 class="cover__title">
-            <span class="accent-span accent-span">С</span>
+            <span class="accent-span">С</span>
             <span class="accent-span text-center">чистого</span>
             <span class="accent-span text-right">листа</span>
           </h1>
@@ -82,13 +84,6 @@
           </p>
           <ul class="content-section__list">
             <li class="content-section__list-item">
-              <img
-                src="images/ellipse.svg"
-                alt="Точка"
-                class="content-section__list-dot"
-                width="6"
-                height="6"
-              />
               <p class="content-section__list-text">
                 <span class="content-section__list-accent"
                   >Неуверенность в результате.</span
@@ -99,13 +94,6 @@
               </p>
             </li>
             <li class="content-section__list-item">
-              <img
-                src="images/ellipse.svg"
-                alt="Точка"
-                class="content-section__list-dot"
-                width="6"
-                height="6"
-              />
               <p class="content-section__list-text">
                 <span class="content-section__list-accent">Страх критики.</span>
                 Если работу будет кто-то оценивать, то уже на самых ранних
@@ -115,13 +103,6 @@
               </p>
             </li>
             <li class="content-section__list-item">
-              <img
-                src="images/ellipse.svg"
-                alt="Точка"
-                class="content-section__list-dot"
-                width="6"
-                height="6"
-              />
               <p class="content-section__list-text">
                 <span class="content-section__list-accent">Перфекционизм.</span>
                 Когда кажется, что работа не будет сделана идеально, будто бы
@@ -130,13 +111,6 @@
               </p>
             </li>
             <li class="content-section__list-item">
-              <img
-                src="images/ellipse.svg"
-                alt="Точка"
-                class="content-section__list-dot"
-                width="6"
-                height="6"
-              />
               <p class="content-section__list-text">
                 <span class="content-section__list-accent"
                   >Отсутствие мотивации.</span
@@ -149,13 +123,6 @@
               </p>
             </li>
             <li class="content-section__list-item">
-              <img
-                src="images/ellipse.svg"
-                alt="Точка"
-                class="content-section__list-dot"
-                width="6"
-                height="6"
-              />
               <p class="content-section__list-text">
                 <span class="content-section__list-accent"
                   >Недостаток информации.</span
@@ -176,9 +143,9 @@
             Чаще всего страх чистого листа появляется не из-за чего-то одного, а
             из-за совокупности нескольких факторов. Вот что может помочь:
           </p>
-          <ul class="cards__list">
-            <li class="card__list-item">
-              <article class="card card__dark">
+          <ul class="cards-list">
+            <li class="cards-list__item">
+              <article class="card card-dark">
                 <div class="card__author">
                   <img
                     src="images/polyarinov.png"
@@ -189,8 +156,8 @@
                   />
                   <p class="card__author-name">Алексей Поляринов</p>
                 </div>
-                <blockquote class="card__content">
-                  <header class="card__title">Начать любыми словами</header>
+                <div class="card__content">
+                  <h4 class="card__title">Начать любыми словами</h4>
                   <p class="card__text">
                     Любыми — без шуток. Если не верите нам, посмотрите,
                     например, чем открывается эссе Алексея Поляринова «Чарли
@@ -200,12 +167,12 @@
                     уже начали что-то делать, и ему становится легче войти в
                     состояние потока.
                   </p>
-                </blockquote>
+                </div>
               </article>
             </li>
-            <li class="card__list-item">
-              <article class="card card__light">
-                <blockquote class="card__content">
+            <li class="cards-list__item">
+              <article class="card card-light">
+                <div class="card__content">
                   <header class="card__title card__text-dark">
                     Поставить перед собой рамку для фотографии
                   </header>
@@ -217,11 +184,11 @@
                     Сосредоточьтесь на том, чтобы заполнить только пространство
                     10х15 сантиметров. Что дальше — пока неважно.
                   </p>
-                </blockquote>
+                </div>
               </article>
             </li>
-            <li class="card__list-item">
-              <article class="card card__dark">
+            <li class="cards-list__item">
+              <article class="card card-dark">
                 <div class="card__author">
                   <img
                     src="images/bunin.png"
@@ -232,7 +199,7 @@
                   />
                   <p class="card__author-name">Иван Бунин</p>
                 </div>
-                <blockquote class="card__content">
+                <div class="card__content">
                   <header class="card__title">Сделать из задачи рутину</header>
                   <p class="card__text">
                     «Писать стихи нужно каждый день, подобно тому как скрипач
@@ -244,7 +211,7 @@
                     идеи, то пишите просто обо всём, что увидите», — такой совет
                     своему приятелю дал Иван Бунин. Нет повода ему не следовать.
                   </p>
-                </blockquote>
+                </di>
               </article>
             </li>
           </ul>
@@ -255,10 +222,10 @@
         <p class="footer__copy">© VЁRSTKA</p>
         <ul class="footer__social">
           <li class="footer__social-item">
-            <a href="#" class="footer__social-link">ВК</a>
+            <a href="#" class="footer__social-link" target="_blank">ВК</a>
           </li>
           <li class="footer__social-item">
-            <a href="#" class="footer__social-link">Ютуб</a>
+            <a href="#" class="footer__social-link" target="_blank">Ютуб</a>
           </li>
         </ul>
       </footer>

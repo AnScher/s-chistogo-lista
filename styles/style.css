@@ -14,12 +14,11 @@
 
   .wrapper {
     max-width: 360px;
-    min-width: 360px;
     margin: 0 auto;
   }
 
   .background-dark {
-    background-color: black;
+    background-color: #131313;
     color: #f5f5f5;
   }
 
@@ -30,9 +29,6 @@
 
   .header {
     padding: 24px 20px;
-  }
-
-  .header__navigation {
     display: flex;
     justify-content: space-between;
   }
@@ -42,12 +38,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 84px;
+    gap: 12px;
   }
 
   .header__menu-link {
     color: #f5f5f5;
-    line-height: 120%;
   }
   
   .header__menu-link-active {
@@ -70,7 +65,7 @@
   .accent-span {
     display: block;
     color: #FFF;
-    font-family:'EB Garamond';
+    font-family:'EB Garamond', 'Arial', sans-serif;
     font-size: 72px;
     font-style: normal;
     font-weight: 400;
@@ -87,19 +82,17 @@
 
   .intro {
     display: flex;
-    height: 453px;
-    padding-top: 30px;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 37px;
+    padding: 30px 20px 37px 20px;
+    line-height: 135%;
   }
 
   .intro__heading {
     display: flex;
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     justify-content: space-between;
     align-items: flex-start;
     color: #ccc;
@@ -107,87 +100,52 @@
   }
 
   .intro__title {
-    width: 203px;
-    flex-shrink: 0;
-    font-family: 'Inter';
+    max-width: 203px;
+    width: 100%;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 120%;
   }
-
-  .intro__main-text {
-    color: #F5F5F5;
-    line-height: 135%;
-    word-break: break-word;
-  }
-
+  
   .content-section {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 40px;
-    padding-bottom: 39px;
+    padding: 41px 20px 39px 20px;
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-  .content-section__subtitle,
-  .how-to__subtitle {
-    width: 320px;
+  .content-section__subtitle {
+    max-width: 320px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: 'EB Garamond';
+    font-family: 'EB Garamond', 'Arial', sans-serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 115%;
   }
 
-  .content-section__introduction,
-  .how-to__introduction {
-    flex-shrink: 0;
-    color: #131313;
-    font-family: 'Inter';
+ .content-section__introduction {
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 135%;
-    word-break: break-word;
   }
 
   .content-section__list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
-    list-style: none;
+    list-style: url('/images/ellipse.svg') outside;
+    padding-left: 15px;
   }
 
   .content-section__list-item {
-    color: #131313;
-    font-family: 'Inter';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 135%;
-    display: flex;
-  }
-
-  .content-section__list-dot {
-    width: 6px;
-    height: 22px;
-    margin-right: 8px;
-  }
-
-  .content-section__list-text {
-    word-break: break-word;
-    max-width: 301px;
+    max-width: 304px;
+    width: 100%;
   }
 
   .content-section__list-accent {
     font-weight: 700;
-    margin-right: 3px;
   }
 
   .how-to {
@@ -201,15 +159,26 @@
   }
 
   .how-to__subtitle {
-    color: #F5F5F5;
+    color: #f5f5f5;
     padding-top: 40px;
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'EB Garamond', 'Arial', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%;
   }
 
   .how-to__introduction {
-    color: #F5F5F5;
+    color: #f5f5f5;
+    font-size: 20px;
+    line-height: 135%;
   }
 
-  .cards__list {
+  .cards-list {
     list-style: none;
     display: flex;
     max-width: 319px;
@@ -227,15 +196,22 @@
     gap: 8px;
   }
 
-  .card__dark {
+  .card-dark {
     background: #343434;
   }
 
-  .card__light {
+  .card-light {
     background: #fee42a;
   }
 
-  .card__author,
+  .card__author {
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
   .card__content {
     display: flex;
     flex-direction: column;
@@ -247,9 +223,6 @@
   .card__text,
   .footer__copy {
     color: #f5f5f5;
-    font-family: 'Inter';
-    font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 135%;
     word-break: break-word;
@@ -257,12 +230,13 @@
 
   .card__title {
     color: #f5f5f5;
-    font-family: 'EB Garamond';
+    font-family: 'EB Garamond', 'Arial', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: 135%;
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
   }
 
   .card__text-dark {
